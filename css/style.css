@@ -1,0 +1,344 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#F3F4F6;
+}
+
+main{
+    /* display:flex; */
+    /* align-items: center; */
+    /* width:100%; */
+    background-color: #FFFFFF;
+}
+.navbar{
+    width:80%;
+    height:86px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-items{
+    width: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    gap:20px;
+}
+.nav-items .nav-links{
+    list-style: none;
+    line-height: 2.4;
+
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navbar img{
+    width:120px;
+}
+.login{
+    width:90px;
+    height:40px;
+    border:2px solid #1f6ae4;
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: white;
+}
+.login:hover{
+    background: linear-gradient(rgba(0, 89, 255, 0.8), rgba(0, 162, 255, 0.8)), url("https://bit.ly/2rlzaXi"); /* The least supported option. */
+    color: white;
+}
+.signup{
+    width:90px;
+    height:40px;
+    background: linear-gradient(rgba(8, 95, 255, 0.8), rgba(5, 127, 197, 0.8)), url("https://bit.ly/2rlzaXi"); /* The least supported option. */
+    border:none;
+    color:white;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.signup:hover{
+    background: linear-gradient(rgba(0, 89, 255, 0.8), rgba(0, 162, 255, 0.8)), url("https://bit.ly/2rlzaXi"); /* The least supported option. */
+    border:none;
+}
+
+a:hover{
+    color:#1f6ae4 !important; /* The least supported option. */
+    
+}
+
+/* active page indicator */
+.active{
+    color:#1f6ae4 !important;
+    font-weight: bold !important;
+    
+}
+
+
+/* hero section styling */
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img-bg{
+    border-radius: 15px;
+    height: 570px;
+    width: 98vw;
+    margin: auto;
+    background: black;
+    overflow: hidden;
+    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(0, 162, 255, 0.8)), url("../assets/hero-img.jfif");
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(8, 95, 145, 0.8)), url("../assets/hero-img.jfif"); /* The least supported option. */
+    /* background-image: url('../assets/hero-img.png'); */
+    /* height: 74vh; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* position: relative; */
+    /* box-shadow-inn:; */
+    /* height: 600px;
+    width: 100vw; */
+    /* opacity: 0.6;
+    object-fit: cover;
+    */
+ 
+   
+}
+
+.main-content{
+    text-align: center;
+    position: relative;
+    top:180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-content h2{
+    font-size:46px;
+    color:white;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.main-content p{
+    font-size: 18px;
+    color:#F3F4F6;
+    width:80ch;
+    text-align: center;
+    /* letter-spacing: 1px; */
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+    line-height: 26px;
+    
+}
+.btn{
+    width:130px !important;
+    height:46px;
+    /* font-size: 16px; */
+    border-radius: 15px;
+    border: none;
+    margin-left: 10px;
+}
+
+.btn-white{
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-blue{
+    font-size: 14.5px;
+    font-weight: bold;
+    opacity: 0.7;
+    background-color: #1f6ae4;
+    cursor: pointer;
+}
+
+.btn-blue:hover{
+    background-color: #0062ff;
+}
+
+/* category design */
+
+.container-xl{
+    width:96%;
+    margin:auto;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    
+}
+
+
+.category-title{
+    text-align: center;
+    margin-bottom: 26px;
+}
+.category-title h4{
+    font-size: 34px;
+    margin-bottom: 6px;
+}
+.category-title span{
+    font-size: 14px;
+    color: rgb(37, 37, 37);
+}
+
+
+.cards{
+    width:90%;
+    margin:auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+.card1{
+    width:300px;
+    height:170px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.card1 img{
+    width:20%;
+}
+.card2{
+    width:300px;
+    height:170px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px  #a5a1a1;
+}
+.card2 img{
+    width:20%;
+    margin-left: 10px;
+}
+.card2 h4{
+    margin-left:10px ;
+}
+.card3{
+    width:300px;
+    height:170px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card3 img{
+    width:20%;
+}
+.card3 h4{
+    margin-left:10px ;
+}
+
+/* add shadow to card when its on hover state */
+.card1:hover{
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 2px  #a5a1a1;
+}
+.card2:hover{
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 2px  #a5a1a1;
+}
+.card3:hover{
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 2px  #a5a1a1;
+
+}
+
+/* course styling */
+.courses{
+    display: flex;
+    
+}
+.head{
+    text-align: center;
+}
+.head h2{
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.head span{
+    font-size: 14px;
+    color: rgb(37, 37, 37);
+}
+
+.main-courses{
+    margin-top: 60px;
+    width:400px;
+    height:490px;
+    background-color: #FFFFFF;
+    margin-left: 30px;
+    box-shadow: 2px 2px 2px 2px  #a5a1a1;
+    border-radius: 10px;
+}
+
+.course-head img{
+    width: 100%;
+    height:280px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.course-body .tag{
+    background-color: #0062ff;
+    padding:9px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.course-body h4{
+    margin-top: 18px;
+    text-transform: capitalize;
+    position: relative;
+    left:20px;
+    top:18px;
+    font-size: 24px;
+}
+
+.course-body .author{
+    /* margin-top: 20px; */
+    position: relative;
+    top: 30px;
+    left: 28px;
+    font-size: 14px;
+}
+.course-body .price{
+    /* margin-top: 20px; */
+    position: relative;
+    top: 60px;
+    left: 28px;
+    font-size: 18px;
+}
